@@ -1,0 +1,16 @@
+You need pi-blaster installed and working for this script to work.
+pi-blaster: https://github.com/sarfata/pi-blaster/
+
+Video streaming with a PS Eye webcam came from this thread:
+http://www.raspberrypi.org/phpBB3/viewtopic.php?f=38&t=19661
+
+The exact steps I took with Model B 512MB RAM and PS Eye are as follows:
+wget http://www.bobtech.ro/get?download=36:mjpg-streamer-rpi
+mv get\?download\=36\:mjpg-streamer-rpi mjpg-streamer-rpi.tar.gz
+tar -zxvf mjpg-streamer-rpi.tar.gz
+cd mjpg-streamer
+sudo nano mjpg-streamer.sh
+Change YUV="false" to YUV="true"
+Change Resolution to 320x240
+I did not change the Port setting, but you can if needed.
+
